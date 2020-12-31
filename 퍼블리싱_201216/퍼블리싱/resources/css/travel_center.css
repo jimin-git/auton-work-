@@ -1,0 +1,84 @@
+@charset "utf-8";
+/*공통*/
+body {font-size:13px;}
+.mt10 {margin-top:10px !important;} .mt18 {margin-top:18px !important;} .mt20 {margin-top:20px !important;} .mt30 {margin-top:30px !important;} .mt40 {margin-top:40px !important;} .mt50 {margin-top:50px !important;} .mt60 {margin-top:60px !important;} .mt70 {margin-top:70px !important;} .mt80 {margin-top:80px !important;} .mt90 {margin-top:90px !important;} .mt100 {margin-top:100px !important;} .mt110 {margin-top:110px !important;} .mt120 {margin-top:120px !important;} .mt140 {margin-top:140px !important;} .mt150 {margin-top:150px !important;} .mt160 {margin-top:160px !important;} .mt200 {margin-top:200px !important;}
+.mb10 {margin-bottom:10px !important;} .mb18 {margin-bottom:18px !important;} .mb20 {margin-bottom:20px !important;} .mb30 {margin-bottom:30px !important;} .mb40 {margin-bottom:40px !important;} .mb50 {margin-bottom:50px !important;} .mb60 {margin-bottom:60px !important;} .mb70 {margin-bottom:70px !important;} .mb80 {margin-bottom:80px !important;} .mb90 {margin-bottom:90px !important;} .mb100 {margin-bottom:100px !important;}
+.ml05 {margin-left:5px;}.ml10 {margin-left:10px !important;} .ml20 {margin-left:20px !important;} .ml30 {margin-left:30px !important;} .ml40 {margin-left:40px !important;} .ml50 {margin-left:50px !important;} .ml60 {margin-left:60px !important;} .ml70 {margin-left:70px !important;} .ml80 {margin-left:80px !important;} .ml90 {margin-left:90px !important;} .ml100 {margin-left:100px !important;}
+.mr10 {margin-right:10px !important;} .mr20 {margin-right:20px !important;} .mr30 {margin-right:30px !important;} .mr40 {margin-right:40px !important;} .mr50 {margin-right:50px !important;} .mr60 {margin-right:60px !important;} .mr70 {margin-right:70px !important;} .mr80 {margin-right:80px !important;} .mr90 {margin-right:90px !important;} .mr100 {margin-right:100px !important;}
+.wd50 {width:50px !important;}.wd80 {width:80px !important;} .wd100 {width:100px !important;} .wd120 {width:120px !important;}.wd140 {width:140px !important;}.wd150 {width:150px !important;} .wd160 {width:160px !important;} .wd180 {width:180px !important;} .wd200 {width:200px !important;} .wd220 {width:220px !important;} .wd240 {width:240px !important;} .wd250 {width:250px !important;} .wd260 {width:260px !important;} .wd280 {width:280px !important;} .wd300 {width:300px !important;}
+.x_1 {width:100% !important;} .x_2 {width:50% !important;} .x_3 {width:33.33% !important;} .x_4 {width:25% !important;} .x_5 {width:20% !important;}
+.h_50 {height:50px !important;line-height:50px !important;}
+
+.bg_white {display:block;height:100%;background:#fff;}
+.box_gray {background:;color:;padding:;}
+.content_box {background:#fff;border:1px solid #d7dce2;overflow:hidden;margin-bottom:15px;}
+.con_box {padding:15px;}
+.tit_section {background:#7d8e9e;color:#fff;font-size:;height:40px;line-height:40px;}
+.tit_type01 {font-size:14px;color:#333333;font-weight: bold;}
+.sub_txt {color:#7e7e80;font-size:13px;}
+
+.inline {display:inline-block;}
+.color_blue,
+.color_blue * {color:blue;}
+.color_red,
+.color_red * {color:red;}
+
+.btn_black {background:#000;color:#fff;}
+.btn.h_50 {font-size:20px;}
+
+input[type="text"]:disabled {background:#d7dce2;}
+input[type="checkbox"]:checked + span {background: url('../images/icon/icon_select_blu.png') no-repeat center;background-size:cover;}
+input[type="radio"]:checked + span {background: url('../images/icon/icon_radio_blu.png') no-repeat center;background-size:cover;}
+select {padding:0 20px 0 10px}
+
+
+/*영업일설정*/
+.checkbox_con label {margin:5px 0;color:#555555}
+.time_set .x_4 {width:22% !important;background-position:right 10px top 15px;}
+.layer_pop_wrap {position:relative;}
+.layer_pop_btn {width:20px;height:auto;display:inline-block;vertical-align:middle;}
+.layer_pop_btn img{width:100%;height:auto;display:block;}
+.layer_pop {position:absolute;bottom:0;left: 100%;margin-left: 30px;width:160px;display:block;padding:15px 5px;border:1px solid #dfdfdf;display:none;}
+.layer_pop em {position:relative;}
+.layer_pop em:before {content:'';display:block;width: 0px;height: 0px;border-top:22px solid none;  border-bottom:22px solid #fff;  border-right: 0 solid transparent;  border-left: 22px solid  transparent; position:absolute;top:39px;left:-24px;z-index:1; }
+.layer_pop em:after {content:'';display:block;border-top:22px solid none;border-bottom:22px solid #dfdfdf;border-right: 0 solid transparent;border-left: 22px solid  transparent;position:absolute;top:40px;left:-26px;}
+.layer_pop span {color:#e60012;}
+/*비밀번호확인*/
+.content_wrap.pw {text-align:center;padding:0 30px;margin-top:120px;}
+.content_wrap.pw img {width:100px;height:auto;}
+.content_wrap.pw input[type="text"] {padding:0 17px}
+/*calender_control_box*/
+.calender_control_box {padding:;}
+.calender_control_box .calender_ck {text-align:center;height:80px;line-height: 60px;background:#eef2f5;position:relative;padding-left:0;cursor: pointer;outline: none;font-size: 18px;font-weight: bold;}
+.calender_control_box .calender_ck.accordion:after {position:absolute;bottom:4px;left:50%;margin-left:-12px;width:24px;height: 30px;background-position: right 0 top 0;}
+.calender_control_box .calender_setting {width:100%;}
+.calender_control_box .calender_setting .calender_date {position:relative;overflow:hidden;height:46px}
+.calender_control_box .calender_setting .calender_date .slick-list {height:100% !important}
+.calender_control_box .calender_setting .calender_date ul {overflow:hidden;display:block;width:100% !important;}
+.calender_control_box .calender_setting .calender_date ul li {text-align:center;width:14%;float:left;}
+.calender_control_box .calender_setting .calender_date ul li p {}
+.calender_control_box .calender_setting .calender_date ul li a {display:block;}
+
+.calender_control_box .calender_setting .calender_date .slick-arrow {position:absolute;right:0;width:20px;height:20px;z-index:2;text-indent:-9999999px;display:block}
+.calender_control_box .calender_setting .calender_date .slick-prev {top:0;}
+.calender_control_box .calender_setting .calender_date .slick-next {bottom:0;}
+
+.calender_control_box .calender_setting .calender_time {width:100%;display:block;height:50px;}
+.calender_control_box .calender_setting .calender_time .slick-list {width:100% !important;}
+.calender_control_box .calender_setting .calender_time  li {float:left;min-width:auto;box-sizing:border-box;}
+.calender_control_box .calender_setting .calender_time li a {display: block;text-align:center;}
+.calender_control_box .calender_setting .calender_time .slick-arrow {position:absolute;top:0;width:20px;height:20px;z-index:2;text-indent:-9999999px;display:block}
+.calender_control_box .calender_setting .calender_time .slick-prev {left:0;}
+.calender_control_box .calender_setting .calender_time .slick-next {right:0;}
+.calender_time.slick-initialized {display:block}
+
+.list_box {}
+.list_none .none {text-align:center;}
+
+.schedule_tit {border:1px solid #d7dce2;}
+.schedule_info {border:1px solid #d7dce2;border-top:0;overflow:hidden;}
+.schedule_info .half {float:left;width:50%;}
+.schedule_info.mt10 {border-top:1px solid #d7dce2;}
+.schedule_info.active {background:#eee;}
+
+.schedule_info + .schedule_tit {margin-top:20px}

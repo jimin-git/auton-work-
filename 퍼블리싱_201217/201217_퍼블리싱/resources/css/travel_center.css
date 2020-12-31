@@ -1,0 +1,155 @@
+@charset "utf-8";
+/*공통*/
+body {font-size:13px;}
+.mt10 {margin-top:10px !important;} .mt18 {margin-top:18px !important;} .mt20 {margin-top:20px !important;} .mt30 {margin-top:30px !important;} .mt40 {margin-top:40px !important;} .mt50 {margin-top:50px !important;} .mt60 {margin-top:60px !important;} .mt70 {margin-top:70px !important;} .mt80 {margin-top:80px !important;} .mt90 {margin-top:90px !important;} .mt100 {margin-top:100px !important;} .mt110 {margin-top:110px !important;} .mt120 {margin-top:120px !important;} .mt140 {margin-top:140px !important;} .mt150 {margin-top:150px !important;} .mt160 {margin-top:160px !important;} .mt200 {margin-top:200px !important;}
+.mb10 {margin-bottom:10px !important;} .mb18 {margin-bottom:18px !important;} .mb20 {margin-bottom:20px !important;} .mb30 {margin-bottom:30px !important;} .mb40 {margin-bottom:40px !important;} .mb50 {margin-bottom:50px !important;} .mb60 {margin-bottom:60px !important;} .mb70 {margin-bottom:70px !important;} .mb80 {margin-bottom:80px !important;} .mb90 {margin-bottom:90px !important;} .mb100 {margin-bottom:100px !important;}
+.ml05 {margin-left:5px;}.ml10 {margin-left:10px !important;} .ml20 {margin-left:20px !important;} .ml30 {margin-left:30px !important;} .ml40 {margin-left:40px !important;} .ml50 {margin-left:50px !important;} .ml60 {margin-left:60px !important;} .ml70 {margin-left:70px !important;} .ml80 {margin-left:80px !important;} .ml90 {margin-left:90px !important;} .ml100 {margin-left:100px !important;}
+.mr10 {margin-right:10px !important;} .mr20 {margin-right:20px !important;} .mr30 {margin-right:30px !important;} .mr40 {margin-right:40px !important;} .mr50 {margin-right:50px !important;} .mr60 {margin-right:60px !important;} .mr70 {margin-right:70px !important;} .mr80 {margin-right:80px !important;} .mr90 {margin-right:90px !important;} .mr100 {margin-right:100px !important;}
+.wd50 {width:50px !important;}.wd80 {width:80px !important;} .wd100 {width:100px !important;} .wd120 {width:120px !important;}.wd140 {width:140px !important;}.wd150 {width:150px !important;} .wd160 {width:160px !important;} .wd180 {width:180px !important;} .wd200 {width:200px !important;} .wd220 {width:220px !important;} .wd240 {width:240px !important;} .wd250 {width:250px !important;} .wd260 {width:260px !important;} .wd280 {width:280px !important;} .wd300 {width:300px !important;}
+.x_1 {width:100% !important;} .x_2 {width:50% !important;} .x_3 {width:33.33% !important;} .x_4 {width:25% !important;} .x_5 {width:20% !important;}
+.h_50 {height:50px !important;line-height:50px !important;}
+
+.bg_white {display:block;height:100%;background:#fff;overflow:hidden;overflow-y:auto;}
+.box_gray {background:;color:;padding:;}
+.content_box {background:#fff;border:1px solid #d7dce2;overflow:hidden;margin-bottom:15px;}
+.con_box {padding:15px;}
+.tit_section {background:#7d8e9e;color:#fff;font-size:;height:40px;line-height:40px;}
+.tit_type01 {font-size:14px;color:#333333;font-weight: bold;}
+.sub_txt {color:#7e7e80;font-size:13px;}
+
+.inline {display:inline-block;}
+.color_blue,
+.color_blue * {color:blue;}
+.color_red,
+.color_red * {color:red;}
+
+.btn_black {background:#000;color:#fff;}
+.btn_blue {background:#5aacea;color:#fff;}
+.btn_white {background:#fff;border:1px solid #d7dce2;color:#39546f;}
+.btn.h_50 {font-size:20px;}
+
+input[type="text"]:disabled {background:#d7dce2;}
+input[type="checkbox"]:checked + span {background: url('../images/icon/icon_select_blu.png') no-repeat center;background-size:cover;}
+input[type="radio"]:checked + span {background: url('../images/icon/icon_radio_blu.png') no-repeat center;background-size:cover;}
+select {padding:0 20px 0 10px}
+
+.icon_more {width:15px;height:15px;position:relative;display:inline-block;vertical-align:middle;}
+.icon_more:after {content:'';display:inline-block;width:10px;height:1px;border-top: 3px solid #fff;transform: rotate(-40deg);position:absolute;top: 50%;left: 7px;}
+.icon_more:before {content:'';display:inline-block;width:10px;height:1px;border-top: 3px solid #fff;transform: rotate(40deg);position:absolute;top: 50%;left: 0;}
+.icon_more.gray:after,
+.icon_more.gray:before {border-color:#7d7e80}
+.icon_more.up {transform:rotate(-180deg);}
+
+/*비밀번호확인*/
+.content_wrap.pw {text-align:center;padding:0 30px;margin-top:120px;}
+.content_wrap.pw img {width:100px;height:auto;}
+.content_wrap.pw input[type="text"] {padding:0 17px}
+
+/*영업일설정*/
+.checkbox_con label {margin:5px 0;color:#555555}
+.time_set .x_4 {width:22% !important;background-position:right 10px top 15px;}
+.layer_pop_wrap {position:relative;}
+.layer_pop_btn {width:20px;height:auto;display:inline-block;vertical-align:middle;}
+.layer_pop_btn img{width:100%;height:auto;display:block;}
+.layer_pop_con {display:none;z-index:10;}
+.layer_pop {position:absolute;bottom:0;left: 100%;margin-left: 30px;width:160px;display:block;padding:15px 5px;border:1px solid #dfdfdf;display:none;}
+.layer_pop em {position:relative;}
+.layer_pop em:before {content:'';display:block;width: 0px;height: 0px;border-top:22px solid none;  border-bottom:22px solid #fff;  border-right: 0 solid transparent;  border-left: 22px solid  transparent; position:absolute;top:39px;left:-24px;z-index:1; }
+.layer_pop em:after {content:'';display:block;border-top:22px solid none;border-bottom:22px solid #dfdfdf;border-right: 0 solid transparent;border-left: 22px solid  transparent;position:absolute;top:40px;left:-26px;}
+.layer_pop span {color:#e60012;}
+
+/*메인*/
+/*calender_control_box*/
+.calender_control_box {padding:;}
+.calender_control_box .calender_ck {text-align:center;height:80px;line-height: 60px;background:#eef2f5;position:relative;padding-left:0;cursor: pointer;outline: none;font-size: 18px;font-weight: bold;}
+.calender_control_box .calender_ck.accordion:after {position:absolute;bottom:4px;left:50%;margin-left:-12px;width:24px;height: 30px;background-position: right 0 top 0;}
+.calender_control_box .calender_setting {width:100%;padding:20px 0;border-bottom:1px solid #d7dce2;opacity:0;}
+.calender_control_box .calender_setting * {font-size:14px;}
+.calender_control_box .calender_setting .calender_date {position:relative;overflow:hidden;height:55px;padding:0 34px;}
+.calender_control_box .calender_setting .calender_date .slick-list {height:100% !important}
+.calender_control_box .calender_setting .calender_date ul {overflow:hidden;display:block;width:100% !important;}
+.calender_control_box .calender_setting .calender_date ul li {text-align:center;width:14%;float:left;}
+.calender_control_box .calender_setting .calender_date ul li p {line-height:30px;}
+.calender_control_box .calender_setting .calender_date ul li a {display:inline-block;width:25px;line-height:25px;}
+.calender_control_box .calender_setting .calender_date ul li a.on {background:#a8daff;font-weight:bold;}
+.calender_control_box .calender_setting .calender_date .slick-arrow {position:absolute;right:15px;width:20px;height:20px;z-index:1;text-indent:-9999999px;display:block;background:url('../../resources/images/icon/icon_calender01_prev.png') center no-repeat;border:none;background-size:13px;}
+.calender_control_box .calender_setting .calender_date .slick-prev {top:8px;}
+.calender_control_box .calender_setting .calender_date .slick-next {bottom:4px;transform:rotate(180deg);}
+.calender_control_box .calender_setting .calender_time {width:100%;display:block;height:40px;margin-top:17px;background:#eef2f5;overflow:hidden;}
+.calender_control_box .calender_setting .calender_time ul {width:100%;display:block;overflow:hidden;padding:0 34px;position:relative;}
+.calender_control_box .calender_setting .calender_time .slick-list {width:100% !important;display:block;}
+.calender_control_box .calender_setting .calender_time li {float:left;min-width:auto;box-sizing:border-box;}
+.calender_control_box .calender_setting .calender_time li a {display: block;text-align:center;line-height:40px;}
+.calender_control_box .calender_setting .calender_time li a.on {background:#000;color:#fff;font-weight:bold;}
+.calender_control_box .calender_setting .calender_time .slick-arrow {position:absolute;top:50%;margin-top:-10px;width:20px;height:20px;z-index:2;text-indent:-9999999px;display:block;background:url('../../resources/images/icon/icon_calender02_prev.png') center no-repeat;border:none;background-size:13px;z-index:1}
+.calender_control_box .calender_setting .calender_time .slick-prev {left:15px;}
+.calender_control_box .calender_setting .calender_time .slick-next {right:15px;transform:rotate(180deg);}
+/*area_control_box*/
+.area_control_box {position:relative;}
+.area_control_box .area_control_btn {line-height:50px;font-size:16px;display:block;width:100%;background:#9aa5ba;color:#fff;text-align:center;position:relative;}
+.area_control_box .area_control_btn p {display:inline-block;vertical-align:middle;position:relative;line-height:20px;height:20px;font-weight:bold;max-width:80%;overflow:hidden;text-overflow: ellipsis;-webkit-line-clamp: 1;-webkit-box-orient: vertical; white-space: nowrap;}
+.area_control_box .area_control_btn span {display:block;height:25px;line-height:25px;background:#d7dce2;}
+.area_control_box .area_setting {position:absolute;top:0;left:0;width:100%;background:#fff;z-index:1;display:none;}
+.area_control_box .area_setting .area_list_all {background:#eef2f5}
+.area_control_box .area_setting .area_list_all a {width:120px;line-height:35px;font-size:15px;display:block;text-align:center;}
+.area_control_box .area_setting .area_list {display:block;overflow:hidden;}
+.area_control_box .area_setting .area_list_01 {position:relative;background:#eef2f5;float:left;overflow:hidden;overflow-y:scroll;height:100%;}
+.area_control_box .area_setting .area_list_01  li a {width:120px;line-height:35px;font-size:15px;display:block;text-align:center;}
+.area_control_box .area_setting .area_list_01  li.on a {background:#fff;}
+.area_control_box .area_setting .area_list_02 {background:#fff; width:calc(100% - 120px);display:block;float:left;position:relative;height:100%}
+.area_control_box .area_setting .area_list_02 ul {overflow:hidden;overflow-y:scroll;display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:#fff;display:none;}
+.area_control_box .area_setting .area_list_02 ul.on {display:block;}
+.area_control_box .area_setting .area_list_02 a {line-height:35px;font-size:15px;padding:0 25px;display:block;text-align:left;border-bottom:1px solid #eef2f5;background:url('../../resources/images/icon/icon_ck_off.png') center right 25px no-repeat;background-size:22px auto;}
+.area_control_box .area_setting .area_list_02 a + a {margin-left:15px;}
+.area_control_box .area_setting .area_list_02 a.on {background:url('../../resources/images/icon/icon_ck_on.png') center right 25px no-repeat;background-size:22px auto;font-weight:bold;color:#5aacea;}
+.area_setting_ck {height:75px;background:#9aa5ba;box-sizing:border-box;}
+.area_setting_ck p {padding:6px 6px 10px;line-height:25px;overflow:hidden;}
+.area_setting_ck .area_setting_ck_list {overflow:hidden;margin-bottom:10px}
+.area_setting_ck .area_setting_ck_list a {margin:0 7px;background:#39546f;border-radius:5px;color:#fff;font-size:14px;padding:0 10px;line-height:25px;display:inline-block;}
+.area_setting_ck .area_setting_ck_list a + a {}
+.area_setting_ck .area_setting_ck_list a:after {content:'';display:inline-block;width:8px;height:8px;margin-left:10px;background:url('../../resources/images/icon/icon_close_gray.png') center no-repeat;background-size:cover;vertical-align:middle;}
+.area_setting_ck .btn_refresh {float:right;}
+.btn_refresh {line-height:24px;height:24px;border-radius:5px;border:1px solid #39546f;color:#fff;}
+.btn_refresh:before {content:'';display:inline-block;width:12px;height:12px;margin-right:4px;background:url('../../resources/images/icon/icon_refresh.png') center no-repeat;background-size:90%;vertical-align:middle;margin-top:-2px;}
+.bim {position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;background:#000;opacity:0.6;display:none;}
+#datepicker {width:320px;margin-left:-160px;position:absolute;z-index:3;top:20%;left:50%;background:#fff;padding-bottom: 55px}
+#datepicker .btn_wrap {position:absolute;bottom:14px;left:10px;display:block;width:calc(100% - 20px);border:none;border:1px solid #dfdfdf;border-top:0;background:#fff;}
+#datepicker .btn_wrap a:nth-child(1){border-right:1px solid #dfdfdf;}
+#datepicker .ui-datepicker {display:block;width:100%;padding:0 10px;border:none;}
+#datepicker .ui-datepicker .ui-datepicker-header {background:#fff;border:none;}
+#datepicker .ui-datepicker-year {display:block;width:100%;line-height:;color:#999999;margin-top:10px;}
+#datepicker .ui-datepicker-month {font-size:20px;color:#293040;}
+#datepicker .ui-datepicker .ui-datepicker-prev, #datepicker .ui-datepicker .ui-datepicker-next {top: unset;bottom:5px;background: url(../../resources/images/icon/icon_calender02_prev.png) center no-repeat; background-size: 13px;}
+#datepicker .ui-datepicker .ui-datepicker-prev {left:102px}
+#datepicker .ui-datepicker .ui-datepicker-next {right:102px;transform: rotate(180deg);}
+#datepicker .ui-datepicker table {border:1px solid #dfdfdf;margin-bottom:0;}
+#datepicker .ui-datepicker table thead {background:#7d8e9e;color:#fff;font-size:14px;}
+#datepicker .ui-datepicker table thead th {border:none;padding: 0;line-height: 30px;}
+#datepicker .ui-datepicker td {text-align:center;}
+#datepicker .ui-state-default,#datepicker .ui-widget-content .ui-state-default, #datepicker .ui-widget-header .ui-state-default {background:#fff;border:none;display:inline-block;border-radius:50%;width:25px;height:25px;text-align:center;font-size:14px;}
+#datepicker .ui-state-default.ui-state-active {background:#5aacea;color:#fff !important;}
+#datepicker tbody td:nth-child(1) .ui-state-default {color:#da4040;}
+#datepicker tbody td:nth-child(7) .ui-state-default {color:#404cea;}
+#datepicker tbody tr:first-child td {padding-top:10px;}
+#datepicker tbody tr:last-child td {padding-bottom:10px;}
+.popup_wrap {background:#fff;position:absolute;top:20%;left: 10%;width:80%;border-radius: 10px;padding: 25px 15px;}
+.popup_wrap .btn_wrap {margin-top:30px;}
+.popup_wrap .btn_wrap a.x_2 {border-radius:5px;width: calc(50% - 10px) !important;}
+.popup_wrap .btn_wrap a.x_2 + a.x_2 {margin-left:10px;}
+.popup_con.center {text-align:center;}
+.popup_con strong {font-weight:bold;}
+/**/
+.list_box {}
+.list_box.gray {}
+.list_none {text-align:center;border:1px #bfbfbf;border-style:dashed;padding:20px;color:#7d7e80;font-weight:bold;width:calc(100% - 60px);margin:0 auto}
+
+.schedule_tit {border:1px solid #d7dce2;margin-top:20px;}
+.schedule_info {border:1px solid #d7dce2;border-top:0;overflow:hidden;}
+.schedule_info .half {float:left;width:50%;}
+.schedule_info.mt10 {border-top:1px solid #d7dce2;}
+.schedule_info.active {background:#eee;}
+
+@media (max-width:360px){
+  /*로그인*/
+	.login_contents {padding-top:50px;}
+}

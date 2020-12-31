@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+
+		<!-- 달력  -->
+	  <link rel="stylesheet" href="../../../resources/css/jquery-ui.css" type="text/css" />
+	  <script src="../../../resources/js/jquery-ui.js"></script>
+
+		<!-- 추가 되는 부분 -->
+
+		<title> 출장센터 </title>
+	</head>
+	<body>
+		<!--  #wrap 시작
+		흰색 배경의 경우 class 추가 bg_white
+
+		-->
+		<div id="wrap">
+		<!-- Language -->
+		<div id="Language">
+			<select class="selectLanguage" name="" id="">
+				<option value="kr" selected="selected">한글</option>
+				<option value="en">ENGLISH</option>
+				<option value="cn">中文(简体)</option>
+				<option value="jp">日本語</option>
+			</select>
+		</div>
+		<span onclick="secondCode();" class="hidebutton" style="width: 50px;height: 50px;display: block;"> </span>
+		<div class="login_contents">
+				<h1>
+					<span data-i18n="login.contents.ownerCenter">출장센터</span>
+				</h1>
+				<div id="login" class="tab_panel active login">
+					<form action="secondCode" id="loginForm" name="loginForm" method="post" role="from">
+						<input type="hidden" name="type" value="0"> <!-- type: { 웹 : 0 ,앱 :1 } -->
+						<input type="hidden" name="duplicationCheckSuccess" id="duplicationCheckSuccess">
+          				<input type="hidden" name="clientIp" id="clientIp" value="106.250.185.162">
+
+						<ul class="form_group">
+							<li><input type="text" data-i18n="[placeholder]login.message.loginID" value="" name="j_username" id="id" placeholder="아이디"></li>
+							<li>
+								<input type="password" data-i18n="[placeholder]login.message.loginPWD" value="" name="j_password" id="password" placeholder="영문/숫자/특수문자 조합, 8~16자">
+								<a href="javascript:;" class="icon_view_pw"></a>
+							</li>
+						</ul>
+						<p class="required login" style="display: block;">2차 인증번호 유효시간이 만료 되었습니다.</p>
+						<div class="checkbox">
+							<label for="idSaveCheck"><input type="checkbox" id="idSaveCheck"><span></span><span data-i18n="login.contents.saveId">아이디 저장</span></label>
+						</div>
+						<div class="deviceExistYn" style="display: block;">
+							<ul class="form_group">
+								<li>
+									<input type="hidden" name="subscription" value="N">
+									<input type="text" data-i18n="[placeholder]login.message.needSecondCodeSend" name="secondCode" id="secondCode" value="" placeholder="남은시간 : 0:00" style="display: inline-block;">
+									<a href="javascript:send_secondCode(0);" class="secondCode_resend" style="display: inline;"><span data-i18n="">재발송</span></a>
+									<span class="helpblock" style="">※ 2차 인증번호를 입력해주세요.</span>
+								</li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="btn_login" id="btn_login" style="display: block;"><span class="login_text" data-i18n="login.contents.login" style="margin-left: 10%;">로그인</span><img class="login_loading" src="/resources/images/common/loading.gif" style="display: inline;"></a>
+
+					</form>
+				</div>
+				<div id="forgot" class="tab_panel forgot" style="display: none;">
+					<form action="/ajax/initPassword" id="initForm" name="initForm" onsubmit="return false;" method="post" role="from">
+						<ul class="form_group">
+							<li><input type="text" data-i18n="[placeholder]login.message.loginID" value="" name="userId" id="userId" placeholder="아이디"></li>
+							<li><input type="text" data-i18n="[placeholder]login.contents.email" value="" name="email" id="email" placeholder="대표 이메일을 입력해주세요."></li>
+						</ul>
+						<p class="required email">입력하신 이메일로 임시비밀번호가 발송되었습니다.</p>
+						<a href="javascript:initPassword();" class="btn_resetPassword" data-i18n="login.contents.resetPassword">비밀번호 초기화</a>
+					</form>
+				</div>
+				<div class="find_idpw">
+					<ul>
+						<li class="forgot" style="display: none;"><a href="#login" class="login_form" data-i18n="login.contents.doLogin">로그인 하기</a></li>
+						<li class="login"><a href="#forgot" class="forgot_form" data-i18n="login.contents.doresetPassword">비밀번호 찾기</a></li>
+					</ul>
+				</div>
+		</div>
+	</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>
